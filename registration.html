@@ -9,17 +9,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/registration.css">
 </head>
 <body>
-    <div class="btn-back">
-        <button type="button">
+    <div class="container">
+        <button type="button" class="btn-back">
             <a href="index.html">Back</a>
         </button>
     </div>
-    <section class="reg-form">
+    <div class="wrapper">
         <div class="reg-wrap">
             <form method="POST" action="https://fom.in.ua/echo">
-                <h2 class="reg-heading">Sign up</h2>
+                <h2 class="reg-heading">
+                    <img src="images/logo.png" alt="logo">
+                    Sign up
+                </h2>
                 <div class="reg-input">
                     <label>
                         <i class='bx bx-envelope'></i>
@@ -31,7 +35,7 @@
                             required="">
                     </label>
                 </div>
-    
+        
                 <div class="reg-input">
                     <label>
                         <i class='bx bx-user-pin'></i>
@@ -42,7 +46,7 @@
                             required="">
                     </label>
                 </div>
-
+    
                 <div class="reg-input">
                     <label>
                         <i class='bx bx-phone' ></i>
@@ -54,7 +58,7 @@
                             title="+38 (0**) ***-**-**">
                     </label>
                 </div>
-
+    
                 <div class="reg-input">
                     <label>
                         <i class='bx bx-lock-alt' ></i>
@@ -66,10 +70,12 @@
                             required="">
                     </label>
                 </div>
-
-                <button class="reg-btn" type="submit">Create account</button>
+    
+                <div class="btn-box">
+                    <button class="reg-btn" type="submit">Create account</button>
+                </div>
             </form>
         </div>
-    </section>
+    </div>
 </body>
 </html>
