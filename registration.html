@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="btn-back">
@@ -17,43 +21,50 @@
             <form method="POST" action="https://fom.in.ua/echo">
                 <h2 class="reg-heading">Sign up</h2>
                 <div class="reg-input">
-                    <input
-                        type="email"
-                        name="user_email"
-                        placeholder="Email"
-                        autofocus=""
-                        required="">
+                    <label>
+                        <i class='bx bx-envelope'></i>
+                        <input
+                            type="email"
+                            name="user_email"
+                            placeholder="Email"
+                            autofocus=""
+                            required="">
+                    </label>
                 </div>
     
                 <div class="reg-input">
-                    <input
-                        type="text"
-                        name="user_name"
-                        placeholder="First name">
+                    <label>
+                        <i class='bx bx-user-pin'></i>
+                        <input
+                            type="text"
+                            name="user_fullname"
+                            placeholder="Full name"
+                            required="">
+                    </label>
                 </div>
 
                 <div class="reg-input">
-                    <input
-                        type="text"
-                        name="user_surname"
-                        placeholder="Last name">
+                    <label>
+                        <i class='bx bx-phone' ></i>
+                        <input
+                            type="tel"
+                            name="user_tel"
+                            placeholder="Phone number"
+                            pattern="\+38 \(\d{3}\) \d{3}-\d{2}-\d{2}"
+                            title="+38 (0**) ***-**-**">
+                    </label>
                 </div>
 
                 <div class="reg-input">
-                    <input
-                        type="tel"
-                        name="user_tel"
-                        placeholder="Phone number"
-                        pattern="\+38 \(\d{3}\) \d{3}-\d{2}-\d{2}"
-                        title="+38 (0**) ***-**-**">
-                </div>
-
-                <div class="reg-input">
-                    <input
-                        type="password"
-                        name="user_password"
-                        placeholder="Password"
-                        title="Password should contain at least 1 upper case, numeric and special character.">
+                    <label>
+                        <i class='bx bx-lock-alt' ></i>
+                        <input
+                            type="password"
+                            name="user_password"
+                            placeholder="Password"
+                            title="Password should contain at least 1 upper case, numeric and special character."
+                            required="">
+                    </label>
                 </div>
 
                 <button class="reg-btn" type="submit">Create account</button>
