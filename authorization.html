@@ -5,8 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign in</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/authorization.css">
 </head>
 <body>
-    
+    <div class="container">
+        <button type="button" class="btn-back">
+            <a class="back" href="index.html">Back</a>
+        </button>
+    </div>
+    <div class="wrapper">
+        <div class="auth-wrap">
+            <form method="POST" action="https://fom.in.ua/echo">
+                <h2 class="auth-heading">
+                    <img src="images/logo.png" alt="logo">
+                    Sign in
+                </h2>
+                <div class="auth-input">
+                    <label>
+                        <i class='bx bx-envelope'></i>
+                        <input
+                            type="email"
+                            name="user_email"
+                            placeholder="Email"
+                            autofocus=""
+                            required="">
+                    </label>
+                </div>
+
+                <div class="auth-input">
+                    <label>
+                        <i class='bx bx-lock-alt' ></i>
+                        <input
+                            type="password"
+                            name="user_password"
+                            placeholder="Password"
+                            required="">
+                    </label>
+                </div>
+
+                <div class="remember-forgot">
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="Remember_me">
+                            Remember me
+                    </label>
+                    <a class="forgot" href="mailto:zaitm99@gmail.com?subject=Forgot%20my%20password">Forgot password?</a>
+                </div>
+
+                <div class="btn-box">
+                    <button class="auth-btn" type="submit">Sign in</button>
+                </div>
+
+                <div class="no-account">
+                    <p>
+                        Don't have an account yet?
+                        <a
+                            class="no-account__sign-up"
+                            href="registration.html">
+                            Sign up
+                        </a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
