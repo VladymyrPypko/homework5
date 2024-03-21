@@ -1,4 +1,3 @@
-/* 1 */
 html {
     font-size: 16px;
 }
@@ -9,6 +8,7 @@ body {
     background: linear-gradient(90deg, rgba(0,12,36,1) 90%, rgba(9,121,24,1) 95%, rgba(0,255,222,1) 100%);
     font-family: "Poppins", sans-serif;
 }
+
 .wrapper {
     width: 80%;
     margin: 0 auto;
@@ -182,11 +182,11 @@ body {
 }
 
 .search-btns .btn-submit:hover {
-    background: rgb(0, 156, 21);
+    background: #3c9806;
 }
 
 .search-btns .btn-reset:hover {
-    background: rgb(160, 5, 5)
+    background: #ad0c0c
 }
 
 .products {
@@ -237,6 +237,123 @@ body {
 }
 
 .item-image img {
-    width: 293px;
-    height: 192px;
+    width: 291px;
+    height: 190px;
+}
+
+.products__item .item-info {
+    width: 94%;
+    list-style: none;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.item-info .info-row {
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.item-info .info-row:last-child {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.info-row:last-child .row-special:last-child {
+    color: #3c9806;
+}
+
+.products__item .btn-container {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding-right: 10px;
+}
+
+.btn-buy {
+    width: 70px;
+    height: 35px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.btn-buy:hover {
+    background: #3c9806;
+    transform: translateY(-2px);
+}
+
+.footer {
+    width: 100%;
+    height: fit-content;
+    margin-top: 100px;
+    padding-top: 15px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.footer__first-line {
+    width: 50%;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer__first-line .line-title {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.footer__first-line .line-item {
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+
+.footer__first-line #Telegram-blog {
+    background: #08c;
+}
+
+.footer__first-line #YouTube-blog {
+    background: #c90505;
+}
+
+.footer__first-line #Twitter-blog {
+    background: #1da1f2;
+}
+
+.footer__first-line #Facebook-blog {
+    background: #4267b2;
+}
+
+.footer__second-line {
+    width: 80%;
+    margin: 50px auto 0 auto;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+.creator-text {
+    margin-top: 20px;
+    font-size: 0.7rem;
 }
