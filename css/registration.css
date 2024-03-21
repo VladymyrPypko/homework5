@@ -26,11 +26,10 @@ body {
     font-weight: 500;
     text-decoration: none;
     color: #fff;
-    vertical-align: middle;
 }
 
-.btn-back:hover,
-a:hover, {
+.btn-back:hover, 
+.btn-back a:hover {
     background: #fff;
     color: black;
 }

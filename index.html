@@ -5,8 +5,217 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+    <div class="wrapper">
+        <nav class="wrapper__menu">
+            <ul class="menu__list">
+                <li class="list__item">
+                    <img src="images/logo.png" alt="logo">
+                    KupiCar
+                </li>
+                <li class="list__item">
+                    <a href="registration.html">Регистрация</a>
+                </li>
+                <li class="list__item">
+                    <a href="authorization.html">Авторизация</a>
+                </li>
+                <li class="list__item">
+                    <a href="https://t.me/zaitzait">Поддержка</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="search">
+            <div class="search-box">
+                <form method="POST" action="https://fom.in.ua/echo">
+                    <h2 class="search-heading">Поиск по характеристикам</h2>
+                    <div class="main-options">
+                        <div class="search-bar-left">
+                            <div class="search-item">
+                                <label for="cab-type">Тип кузова:</label>
+                                <select name="cab-type" id="cab-type">
+                                    <option value="0">Любой</option>
+                                    <option value="1">Купэ</option>
+                                    <option value="2">Универсал</option>
+                                    <option value="3">Кабриолет</option>
+                                    <option value="4">Седан</option>
+                                    <option value="5">Лимузин</option>
+                                    <option value="6">Внедорожник</option>
+                                    <option value="7">Хетчбэк</option>
+                                    <option value="8">Пикап</option>
+                                </select>
+                            </div>
+            
+                            <div class="search-item">
+                                <label for="car-brand">Марка авто:</label>
+                                <select name="car-brand" id="car-brand">
+                                    <option value="0">Все</option>
+                                    <option value="1">Nissan</option>
+                                    <option value="2">Hyundai</option>
+                                    <option value="3">Kia</option>
+                                    <option value="4">Mazda</option>
+                                    <option value="5">Subaru</option>
+                                    <option value="6">Honda</option>
+                                    <option value="7">Lexus</option>
+                                    <option value="8">Mini</option>
+                                    <option value="9">BMW</option>
+                                    <option value="10">Mercedes</option>
+                                    <option value="11">Audi</option>
+                                </select>
+                            </div>
+            
+                            <div class="search-item">
+                                <label for="producing-country">Страна-производитель:</label>
+                                <select name="producing-country">
+                                    <option value="0">Любая</option>
+                                    <option value="1">Германия</option>
+                                    <option value="2">Италия</option>
+                                    <option value="3">Япония</option>
+                                    <option value="4">Корея</option>
+                                    <option value="5">Китай</option>
+                                    <option value="6">Англия</option>
+                                    <option value="7">Америка</option>
+                                    <option value="8">Украина</option>
+                                </select>
+                            </div>
+            
+                            <div class="search-item" id="money">
+                                <span class="item-text">Цена, $:</span>
+                                <div class="item-box">
+                                    <label for="min-price">От</label>
+                                    <input
+                                        type="number"
+                                        name="min-price"
+                                        id="min-price"
+                                        value="100"
+                                        max="50000"
+                                        step="100">
+                                    <label for="max-price">До</label>
+                                    <input
+                                        type="number"
+                                        name="max-price"
+                                        id="max-price"
+                                        value="100"
+                                        max="50000"
+                                        step="100">
+                                </div>
+                            </div>
+            
+                            <div class="search-item" id="year">
+                                <span class="item-text">Год выпуска:</span>
+                                <div class="item-box">
+                                    <label for="min-year">От</label>
+                                    <input
+                                        type="number"
+                                        name="min-year"
+                                        id="min-year"
+                                        value="2015"
+                                        min="1970"
+                                        max="2024">
+                                    <label for="max-year">До</label>
+                                    <input
+                                        type="number"
+                                        name="max-year"
+                                        id="max-year"
+                                        value="2024"
+                                        min="1970"
+                                        max="2024">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-bar-right">
+                            <div class="search-item" id="condition-multiple">
+                                <label for="car-condition">Состояние:</label>
+                                <select name="car-condition" multiple="" size="2" id="car-condition">
+                                    <option value="0">С салона</option>
+                                    <option value="1">Б/у</option>
+                                    <option value="2">Нерастаможенная</option>
+                                    <option value="3">В кредите</option>
+                                    <option value="4">Технически неисправна</option>
+                                    <option value="5">Конфискат</option>
+                                    <option value="6">Была в ДТП</option>
+                                </select>
+                            </div>
+            
+                            <div class="search-item">
+                                <label for="fuel-type">Тип топлива:</label>
+                                <select name="fuel-type" id="fuel-type">
+                                    <option value="0">Бензин</option>
+                                    <option value="1">Дизель</option>
+                                    <option value="2">Газ</option>
+                                    <option value="3">Газ-бензин</option>
+                                    <option value="4">Самогон</option>
+                                </select>
+                            </div>
+            
+                            <div class="search-item">
+                                <label for="transmission">Тип КПП:</label>
+                                <select name="transmission" id="transmission">
+                                    <option value="0">Все</option>
+                                    <option value="1">Автоматическая</option>
+                                    <option value="2">Механическая</option>
+                                    <option value="3">Роботизированная</option>
+                                    <option value="4">Вариативная</option>
+                                </select>
+                            </div>
+            
+                            <div class="search-item">
+                                <label for="car-color">Цвет кузова:</label>
+                                <input type="color" name="car-color" id="car-color">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-item">
+                        <h5 class="additional-heading">Дополнительные оцпии:</h5>
+                        <div class="additional-options">
+                            <div class="additional-column">
+                                <label>
+                                    <input type="checkbox" name="parking-sensor">
+                                    Парктроник
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="heated-seats">
+                                    Подогрев сидений
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="seats-memory">
+                                    Память сидений
+                                </label>
+                            </div>
+                            <div class="additional-column">
+                                <label>
+                                    <input type="checkbox" name="sunroof">
+                                    Люк
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="power-steering">
+                                    Усилитель руля
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="start-stop">
+                                    Система "start/stop"
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-btns">
+                        <div class="search-reset">
+                            <button class="btn-reset" type="reset">Стереть</button>
+                        </div>
     
+                        <div class="search-submit">
+                            <button class="btn-submit" type="submit">Показать</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
