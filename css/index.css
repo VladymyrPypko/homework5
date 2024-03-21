@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('/homework5/fonts/Poppins/Poppins-Black.ttf') format('ttf');
+}
+
 html {
     font-size: 16px;
 }
@@ -6,7 +11,7 @@ body {
     min-height: 100vh;
     background: rgb(0,12,36);
     background: linear-gradient(90deg, rgba(0,12,36,1) 90%, rgba(9,121,24,1) 95%, rgba(0,255,222,1) 100%);
-    font-family: "Poppins", sans-serif;
+    font-family: 'CustomFont', sans-serif;
 }
 
 .wrapper {
@@ -109,7 +114,7 @@ body {
 
 .main-options select,
 .main-options input {
-    font-family: "Poppins", sans-serif;
+    font-family: 'CustomFont', sans-serif;
     width: 40%;
     background: #fff;
     border: 1px solid rgba(255, 255, 255, 100%);
@@ -168,7 +173,7 @@ body {
 }
 
 .search-btns button {
-    font-family: "Poppins", sans-serif;
+    font-family: 'CustomFont', sans-serif;
     width: 80px;
     height: 30px;
     font-size: 1rem;
@@ -282,7 +287,7 @@ body {
     border: 2px solid #fff;
     border-radius: 5px;
     cursor: pointer;
-    font-family: "Poppins", sans-serif;
+    font-family: 'CustomFont', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     color: #fff;
