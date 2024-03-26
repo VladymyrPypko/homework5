@@ -48,6 +48,7 @@ body {
     height: 50px;
     padding: 0 10px;
     text-decoration: none;
+    font-size: 1vw;
     font-weight: 500;
     color: #fff;
 }
@@ -58,12 +59,12 @@ body {
 
 .wrapper__menu .wrapper__item:first-child {
     margin-right: auto;
-    font-size: 1.5rem;
+    font-size: 1.4vw;
     font-weight: 600;
 }
 
 .search {
-    font-size: 1rem;
+    font-size: 1vw;
     color: #fff;
     margin-bottom: 80px;
 }
@@ -80,7 +81,7 @@ body {
 
 .search__box .search__heading {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.2vw;
     font-weight: 550;
 }
 
@@ -113,7 +114,7 @@ body {
     border-radius: 2px;
     outline: none;
     font-family: 'CustomFont', sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.9vw;
     color: #000;
 }
 
@@ -127,11 +128,12 @@ body {
 #money input,
 #year input {
     width: 28%;
+    min-width: 50px;
 }
 
 .search__heading--additional {
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.1vw;
     font-weight: 510;
     margin: 20px 0;
 }
@@ -160,6 +162,7 @@ body {
     align-items: center;
     margin: 20px;
     line-height: 35px;
+    font-size: 1vw;
 }
 
 .search__options--mod .search__text {
@@ -169,7 +172,7 @@ body {
     margin-right: 30px;
     background: #005c8a;
     border-radius: 5px;
-    font-size: 1.1rem;
+    font-size: 1.1vw;
     font-weight: 500;
     vertical-align: middle;
     text-align: center;
@@ -197,7 +200,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-family: 'CustomFont', sans-serif;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 500;
     color: #fff;
 }
@@ -217,14 +220,13 @@ body {
 
 .products__heading {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     font-weight: 550;
     color: #fff;
 }
 
 .products__wrap {
-    width: 1500px;
-    height: fit-content;
+    width: 100%;
 }
 
 .products__top,
@@ -235,9 +237,10 @@ body {
 }
 
 .products__item {
-    width: 325px;
-    height: 400px;
-    margin: 25px;
+    position: relative;
+    width: 22%;
+    min-height: 370px;
+    margin: 25px auto;
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
     border: 2px solid #fff;
@@ -245,39 +248,41 @@ body {
 }
 
 .products__image {
-    width: 301px;
-    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 94%;
     margin: 10px auto 20px auto;
     border: 2px solid #fff;
     border-radius: 7px;
     padding: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .products__image img {
-    width: 291px;
-    height: 190px;
+    width: 94%;
+    max-height: 155px;
 }
 
 .products__info {
+    display: flex;
+    flex-direction: column;
     width: 94%;
+    margin: 0 10px;
     list-style: none;
-    color: #fff;
+    font-size: 0.9vw;
     font-weight: 400;
-    margin-left: 10px;
+    color: #fff;
 }
 
 .products__row {
-    margin-bottom: 4px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    margin-bottom: 4px;
 }
 
 .products__row:last-child {
-    font-size: 1.3rem;
+    font-size: 1.1vw;
     font-weight: 500;
 }
 
@@ -285,17 +290,10 @@ body {
     color: #3c9806;
 }
 
-.products__btn-container {
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    width: 100%;
-    height: 50px;
-    padding-right: 10px;
-    line-height: 50px;
-}
-
 .products__link {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -305,7 +303,7 @@ body {
     border: 2px solid #fff;
     border-radius: 5px;
     font-family: 'CustomFont', sans-serif;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 400;
     text-decoration: none;
     color: #fff;
@@ -337,19 +335,21 @@ body {
 .footer__heading {
     white-space: nowrap;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.2vw;
     color: #fff;
 }
 
 .footer__top .footer__item {
     width: 140px;
     height: 40px;
+    margin-left: 5px;
+    border: 1px solid #fff;
+    border-radius: 4px;
     line-height: 40px;
     text-align: center;
     text-decoration: none;
+    font-size: 1vw;
     color: #fff;
-    border: 1px solid #fff;
-    border-radius: 4px;
 }
 
 .footer__top #Telegram-blog {
@@ -373,11 +373,11 @@ body {
     margin: 50px auto 0 auto;
     padding-bottom: 10px;
     text-align: center;
+    font-size: 1vw;
     color: #fff;
-    font-size: 0.8rem;
 }
 
 .footer__text--mod {
     margin-top: 20px;
-    font-size: 0.7rem;
+    font-size: 0.7vw;
 }
