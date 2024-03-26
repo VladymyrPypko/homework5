@@ -11,30 +11,30 @@
 <body>
     <div class="wrapper">
         <nav class="wrapper__menu">
-            <ul class="menu__list">
-                <li class="list__item">
+            <ul class="wrapper__list">
+                <li class="wrapper__item">
                     <img src="images/logo.png" alt="logo">
                     KupiCar
                 </li>
-                <li class="list__item">
+                <li class="wrapper__item">
                     <a href="registration.html">Регистрация</a>
                 </li>
-                <li class="list__item">
+                <li class="wrapper__item">
                     <a href="authorization.html">Авторизация</a>
                 </li>
-                <li class="list__item">
-                    <a href="https://t.me/zaitzait">Поддержка</a>
+                <li class="wrapper__item">
+                    <a href="https://t.me/zaitzait" target="_blank">Поддержка</a>
                 </li>
             </ul>
         </nav>
 
         <section class="search">
-            <div class="search-box">
+            <div class="search__box">
                 <form method="POST" action="https://fom.in.ua/echo">
-                    <h2 class="search-heading">Поиск по характеристикам</h2>
-                    <div class="main-options">
-                        <div class="search-bar-left">
-                            <div class="search-item">
+                    <h2 class="search__heading">Поиск по характеристикам</h2>
+                    <div class="search__main-options">
+                        <div class="search__bar-left">
+                            <div class="search__item">
                                 <label for="cab-type">Тип кузова:</label>
                                 <select name="cab-type" id="cab-type">
                                     <option value="0">Любой</option>
@@ -49,7 +49,7 @@
                                 </select>
                             </div>
             
-                            <div class="search-item">
+                            <div class="search__item">
                                 <label for="car-brand">Марка авто:</label>
                                 <select name="car-brand" id="car-brand">
                                     <option value="0">Все</option>
@@ -67,7 +67,7 @@
                                 </select>
                             </div>
             
-                            <div class="search-item">
+                            <div class="search__item">
                                 <label for="producing-country">Страна-производитель:</label>
                                 <select name="producing-country">
                                     <option value="0">Любая</option>
@@ -82,9 +82,9 @@
                                 </select>
                             </div>
             
-                            <div class="search-item" id="money">
-                                <span class="item-text">Цена, $:</span>
-                                <div class="item-box">
+                            <div class="search__item" id="money">
+                                <span class="search__text">Цена, $:</span>
+                                <div class="search__inner-box">
                                     <label for="min-price">От</label>
                                     <input
                                         type="number"
@@ -104,9 +104,9 @@
                                 </div>
                             </div>
             
-                            <div class="search-item" id="year">
-                                <span class="item-text">Год выпуска:</span>
-                                <div class="item-box">
+                            <div class="search__item" id="year">
+                                <span class="search__text">Год выпуска:</span>
+                                <div class="search__inner-box">
                                     <label for="min-year">От</label>
                                     <input
                                         type="number"
@@ -126,8 +126,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="search-bar-right">
-                            <div class="search-item" id="condition-multiple">
+                        <div class="search__bar-right">
+                            <div class="search__item" id="condition-multiple">
                                 <label for="car-condition">Состояние:</label>
                                 <select name="car-condition" multiple="" size="2" id="car-condition">
                                     <option value="0">С салона</option>
@@ -140,7 +140,7 @@
                                 </select>
                             </div>
             
-                            <div class="search-item">
+                            <div class="search__item">
                                 <label for="fuel-type">Тип топлива:</label>
                                 <select name="fuel-type" id="fuel-type">
                                     <option value="0">Бензин</option>
@@ -151,7 +151,7 @@
                                 </select>
                             </div>
             
-                            <div class="search-item">
+                            <div class="search__item">
                                 <label for="transmission">Тип КПП:</label>
                                 <select name="transmission" id="transmission">
                                     <option value="0">Все</option>
@@ -162,16 +162,16 @@
                                 </select>
                             </div>
             
-                            <div class="search-item">
+                            <div class="search__item">
                                 <label for="car-color">Цвет кузова:</label>
                                 <input type="color" name="car-color" id="car-color">
                             </div>
                         </div>
                     </div>
-                    <div class="search-item">
-                        <h5 class="additional-heading">Дополнительные оцпии:</h5>
-                        <div class="additional-options">
-                            <div class="additional-column">
+                    <div class="search__item search__item--additional">
+                        <h5 class="search__heading--additional">Дополнительные оцпии:</h5>
+                        <div class="search__options">
+                            <div class="search__column">
                                 <label>
                                     <input type="checkbox" name="parking-sensor">
                                     Парктроник
@@ -185,7 +185,7 @@
                                     Память сидений
                                 </label>
                             </div>
-                            <div class="additional-column">
+                            <div class="search__column">
                                 <label>
                                     <input type="checkbox" name="sunroof">
                                     Люк
@@ -201,13 +201,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="search-btns">
-                        <div class="search-reset">
-                            <button class="btn-reset" type="reset">Стереть</button>
+                    <div class="search__buttons">
+                        <div class="search__reset">
+                            <button class="search__reset-btn" type="reset">Стереть</button>
                         </div>
     
-                        <div class="search-submit">
-                            <button class="btn-submit" type="submit">Показать</button>
+                        <div class="search__submit">
+                            <button class="search__submit-btn" type="submit">Показать</button>
                         </div>
                     </div>
                 </form>
@@ -215,64 +215,64 @@
         </section>
         <section class="products">
             <h2 class="products__heading">Актуальные предложения:</h2>
-            <div class="pruducts-wrap">
-                <div class="products__first-line">
+            <div class="pruducts__wrap">
+                <div class="products__top">
                     <div class="products__item">
-                        <div class="item-image">
+                        <div class="products__image">
                             <img src="images/audi_q.webp" alt="audi-q5">
                         </div>
-                        <ul class="item-info">
-                            <li class="info-row">
+                        <ul class="products__info">
+                            <li class="products__row">
                                 Марка, модель:
-                                <span class="row-special">Audi, Q5</span>
+                                <span class="products__row--special">Audi, Q5</span>
                             </li>
-                            <li class="info-row">
+                            <li class="products__row">
                                 Год:
-                                <span class="row-special">2016</span>
+                                <span class="products__row--special">2016</span>
                             </li>
-                            <li class="info-row">
+                            <li class="products__row">
                                 Пробег, тыс. км:
-                                <span class="row-special">191</span>
+                                <span class="products__row--special">191</span>
                             </li>
-                            <li class="info-row">
+                            <li class="products__row">
                                 Местоположение:
-                                <span class="row-special">г.Львов</span>
+                                <span class="products__row--special">г.Львов</span>
                             </li>
-                            <li class="info-row">
+                            <li class="products__row">
                                 Цена:
-                                <span class="row-special">12 700 $</span>
+                                <span class="products__row--special">12 700 $</span>
                             </li>
                         </ul>
-                        <div class="btn-container">
-                            <a class="btn-link" href="#">
-                                <button class="btn-buy" type="button">Купить</button>
+                        <div class="products__btn-container">
+                            <a class="products__link" href="#">
+                                <button class="products__buy" type="button">Купить</button>
                             </a>
                         </div>
                     </div>
                     <div class="products__item">
-                        <div class="item-image">
+                        <div class="products__image">
                             <img src="images/bmw_6.webp" alt="bmw-m6">
                         </div>
-                        <ul class="item-info">
-                            <li class="info-row">
+                        <ul class="products__info">
+                            <li class="products__row">
                                 Марка, модель:
-                                <span class="row-special">BMW, 6 Series</span>
+                                <span class="products__row--special">BMW, 6 Series</span>
                             </li>
-                            <li class="info-row">
+                            <li class="products__row">
                                 Год:
-                                <span class="row-special">2012</span>
+                                <span class="products__row--special">2012</span>
                             </li>
-                            <li class="info-row">
+                            <li class="products__row">
                                 Пробег, тыс. км:
-                                <span class="row-special">77</span>
+                                <span class="products__row--special">77</span>
                             </li>
-                            <li class="info-row">
+                            <li class="products__row">
                                 Местоположение:
-                                <span class="row-special">г.Днепр</span>
+                                <span class="products__row--special">г.Днепр</span>
                             </li>
-                            <li class="info-row">
+                            <li class="products__row">
                                 Цена:
-                                <span class="row-special">33 000 $</span>
+                                <span class="products__row--special">33 000 $</span>
                             </li>
                         </ul>
                         <div class="btn-container">
@@ -282,29 +282,29 @@
                         </div>
                     </div>
                     <div class="products__item">
-                        <div class="item-image">
+                        <div class="products__image">
                             <img src="images/ford_fusion.webp" alt="ford-fusion">
                         </div>
-                        <ul class="item-info">
-                            <li class="info-row">
+                        <ul class="products__info">
+                            <li class="products__row">
                                 Марка, модель:
-                                <span class="row-special">Ford, Fusion</span>
+                                <span class="products__row--special">Ford, Fusion</span>
                             </li>
-                            <li class="info-row">
+                            <li class="products__row">
                                 Год:
-                                <span class="row-special">2016</span>
+                                <span class="products__row--special">2016</span>
                             </li>
-                            <li class="info-row">
+                            <li class="products__row">
                                 Пробег, тыс. км:
-                                <span class="row-special">160</span>
+                                <span class="products__row--special">160</span>
                             </li>
-                            <li class="info-row">
+                            <li class="products__row">
                                 Местоположение:
-                                <span class="row-special">г.Бровары</span>
+                                <span class="products__row--special">г.Бровары</span>
                             </li>
-                            <li class="info-row">
+                            <li class="products__row">
                                 Цена:
-                                <span class="row-special">12 000 $</span>
+                                <span class="products__row--special">12 000 $</span>
                             </li>
                         </ul>
                         <div class="btn-container">
@@ -314,29 +314,29 @@
                         </div>
                     </div>
                     <div class="products__item">
-                        <div class="item-image">
+                        <div class="products__image">
                             <img src="images/honda_accord.webp" alt="honda-accord">
                         </div>
-                        <ul class="item-info">
-                            <li class="info-row">
+                        <ul class="products__info">
+                            <li class="products__row">
                                 Марка, модель:
-                                <span class="row-special">Honda, Accord</span>
+                                <span class="products__row--special">Honda, Accord</span>
                             </li>
-                            <li class="info-row">
+                            <li class="products__row">
                                 Год:
-                                <span class="row-special">2008</span>
+                                <span class="products__row--special">2008</span>
                             </li>
-                            <li class="info-row">
+                            <li class="products__row">
                                 Пробег, тыс. км:
-                                <span class="row-special">233</span>
+                                <span class="products__row--special">233</span>
                             </li>
-                            <li class="info-row">
+                            <li class="products__row">
                                 Местоположение:
-                                <span class="row-special">г.Кропивницкий</span>
+                                <span class="products__row--special">г.Кропивницкий</span>
                             </li>
-                            <li class="info-row">
+                            <li class="products__row">
                                 Цена:
-                                <span class="row-special">10 599 $</span>
+                                <span class="products__row--special">10 599 $</span>
                             </li>
                         </ul>
                         <div class="btn-container">
@@ -346,31 +346,31 @@
                         </div>
                     </div>
                 </div>
-                <div class="products__second-line">
+                <div class="products__bottom">
                     <div class="products__item">
-                        <div class="item-image">
+                        <div class="products__image">
                             <img src="images/hyundai_sonata.webp" alt="hyundai-sonata">
                         </div>
-                        <ul class="item-info">
-                            <li class="info-row">
+                        <ul class="products__info">
+                            <li class="products__row">
                                 Марка, модель:
-                                <span class="row-special">Hyundai, Sonata</span>
+                                <span class="products__row--special">Hyundai, Sonata</span>
                             </li>
-                            <li class="info-row">
+                            <li class="products__row">
                                 Год:
-                                <span class="row-special">2015</span>
+                                <span class="products__row--special">2015</span>
                             </li>
-                            <li class="info-row">
+                            <li class="products__row">
                                 Пробег, тыс. км:
-                                <span class="row-special">117</span>
+                                <span class="products__row--special">117</span>
                             </li>
-                            <li class="info-row">
+                            <li class="products__row">
                                 Местоположение:
-                                <span class="row-special">г.Днепр</span>
+                                <span class="products__row--special">г.Днепр</span>
                             </li>
-                            <li class="info-row">
+                            <li class="products__row">
                                 Цена:
-                                <span class="row-special">11 200 $</span>
+                                <span class="products__row--special">11 200 $</span>
                             </li>
                         </ul>
                         <div class="btn-container">
@@ -380,29 +380,29 @@
                         </div>
                     </div>
                     <div class="products__item">
-                        <div class="item-image">
+                        <div class="products__image">
                             <img src="images/jeep_gladiator.webp" alt="jeep-gladiator">
                         </div>
-                        <ul class="item-info">
-                            <li class="info-row">
+                        <ul class="products__info">
+                            <li class="products__row">
                                 Марка, модель:
-                                <span class="row-special">Jeep, Gladiator</span>
+                                <span class="products__row--special">Jeep, Gladiator</span>
                             </li>
-                            <li class="info-row">
+                            <li class="products__row">
                                 Год:
-                                <span class="row-special">2019</span>
+                                <span class="products__row--special">2019</span>
                             </li>
-                            <li class="info-row">
+                            <li class="products__row">
                                 Пробег, тыс. км:
-                                <span class="row-special">80</span>
+                                <span class="products__row--special">80</span>
                             </li>
-                            <li class="info-row">
+                            <li class="products__row">
                                 Местоположение:
-                                <span class="row-special">г.Киев</span>
+                                <span class="products__row--special">г.Киев</span>
                             </li>
-                            <li class="info-row">
+                            <li class="products__row">
                                 Цена:
-                                <span class="row-special">47 000 $</span>
+                                <span class="products__row--special">47 000 $</span>
                             </li>
                         </ul>
                         <div class="btn-container">
@@ -412,29 +412,29 @@
                         </div>
                     </div>
                     <div class="products__item">
-                        <div class="item-image">
+                        <div class="products__image">
                             <img src="images/mazda_cx.webp" alt="mazda-cx">
                         </div>
-                        <ul class="item-info">
-                            <li class="info-row">
+                        <ul class="products__info">
+                            <li class="products__row">
                                 Марка, модель:
-                                <span class="row-special">Mazda, CX-5</span>
+                                <span class="products__row--special">Mazda, CX-5</span>
                             </li>
-                            <li class="info-row">
+                            <li class="products__row">
                                 Год:
-                                <span class="row-special">2012</span>
+                                <span class="products__row--special">2012</span>
                             </li>
-                            <li class="info-row">
+                            <li class="products__row">
                                 Пробег, тыс. км:
-                                <span class="row-special">166</span>
+                                <span class="products__row--special">166</span>
                             </li>
-                            <li class="info-row">
+                            <li class="products__row">
                                 Местоположение:
-                                <span class="row-special">г.Ровно</span>
+                                <span class="products__row--special">г.Ровно</span>
                             </li>
-                            <li class="info-row">
+                            <li class="products__row">
                                 Цена:
-                                <span class="row-special">13 700 $</span>
+                                <span class="products__row--special">13 700 $</span>
                             </li>
                         </ul>
                         <div class="btn-container">
@@ -444,29 +444,29 @@
                         </div>
                     </div>
                     <div class="products__item">
-                        <div class="item-image">
+                        <div class="products__image">
                             <img src="images/toyota_camry.webp" alt="toyota-camry">
                         </div>
-                        <ul class="item-info">
-                            <li class="info-row">
+                        <ul class="products__info">
+                            <li class="products__row">
                                 Марка, модель:
-                                <span class="row-special">Toyota, Camry</span>
+                                <span class="products__row--special">Toyota, Camry</span>
                             </li>
-                            <li class="info-row">
+                            <li class="products__row">
                                 Год:
-                                <span class="row-special">2011</span>
+                                <span class="products__row--special">2011</span>
                             </li>
-                            <li class="info-row">
+                            <li class="products__row">
                                 Пробег, тыс. км:
-                                <span class="row-special">183</span>
+                                <span class="products__row--special">183</span>
                             </li>
-                            <li class="info-row">
+                            <li class="products__row">
                                 Местоположение:
-                                <span class="row-special">г.Ивано-Франковск</span>
+                                <span class="products__row--special">г.Ивано-Франковск</span>
                             </li>
-                            <li class="info-row">
+                            <li class="products__row">
                                 Цена:
-                                <span class="row-special">14 150 $</span>
+                                <span class="products__row--special">14 150 $</span>
                             </li>
                         </ul>
                         <div class="btn-container">
@@ -479,28 +479,28 @@
             </div>
         </section>
         <footer class="footer">
-            <div class="footer__first-line">
-                <h2 class="line-title">Наш блог:</h2>
-                <a class="line-item" href="#" id="YouTube-blog">
+            <div class="footer__top">
+                <h2 class="footer__heading">Наш блог:</h2>
+                <a class="footer__item" href="#" id="YouTube-blog">
                     <i class='bx bxl-youtube'></i>
                     YouTube
                 </a>
-                <a class="line-item" href="#" id="Telegram-blog">
+                <a class="footer__item" href="#" id="Telegram-blog">
                     <i class='bx bxl-telegram' ></i>
                     Telegram
                 </a>
-                <a class="line-item" href="#" id="Twitter-blog">
+                <a class="footer__item" href="#" id="Twitter-blog">
                     <i class='bx bxl-twitter' ></i>
                     Twitter
                 </a>
-                <a class="line-item" href="#" id="Facebook-blog">
+                <a class="footer__item" href="#" id="Facebook-blog">
                     <i class='bx bxl-facebook-square' ></i>
                     Facebook
                 </a>
             </div>
-            <div class="footer__second-line">
-                <p class="line-text">Режим работы: Пн-Вс с 7:00 до 22:00</p>
-                <p class="creator-text">2024 by Vladymyr Pypko</p>
+            <div class="footer__bottom">
+                <p class="footer__text">Режим работы: Пн-Вс с 7:00 до 22:00</p>
+                <p class="footer__text--mod">2024 by Vladymyr Pypko</p>
             </div>
         </footer>
     </div>
