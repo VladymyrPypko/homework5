@@ -34,19 +34,21 @@ body {
 }
 
 .wrapper__item {
-    height: 50px
+    display: block;
+    line-height: 40px;
 }
 
 .wrapper__menu img {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
+    vertical-align: middle;
 }
 
 .wrapper__item, .wrapper__item a {
-    display: flex;
-    align-items: center;
-    height: 50px;
-    padding: 0 10px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2px 10px;
     text-decoration: none;
     font-size: 1vw;
     font-weight: 500;
@@ -61,6 +63,8 @@ body {
     margin-right: auto;
     font-size: 1.4vw;
     font-weight: 600;
+    vertical-align: middle;
+    text-align: center;
 }
 
 .search {
@@ -121,7 +125,7 @@ body {
 .search__inner-box {
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    align-items: center;
     width: 50%;
 }
 
@@ -167,8 +171,7 @@ body {
 
 .search__options--mod .search__text {
     display: inline-block;
-    height: 35px;
-    width: 180px;
+    width: 25%;
     margin-right: 30px;
     background: #005c8a;
     border-radius: 5px;
@@ -176,6 +179,7 @@ body {
     font-weight: 500;
     vertical-align: middle;
     text-align: center;
+    white-space: nowrap;
 }
 
 .search__options--mod input {
@@ -380,4 +384,248 @@ body {
 .footer__text--mod {
     margin-top: 20px;
     font-size: 0.7vw;
+}
+
+.back {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 15px;
+}
+
+.back .back__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 3%;
+    padding: 5px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-family: 'CustomFont', sans-serif;
+    font-size: 16px;
+    font-weight: 550;
+    text-decoration: none;
+    color: #fff;
+}
+
+.back .back__link:hover {
+    background: #fff;
+    color: #232323;
+    font-weight: 550;
+}
+
+.auth-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.auth-wrap__box {
+    background: rgba(255, 255, 255, 0.1);
+    width: 600px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    padding: 20px;
+}
+
+.auth-wrap .auth-wrap__heading {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 25px;
+    line-height: 50px;
+}
+
+.auth-wrap__heading img {
+    height: 35px;
+    width: 35px;
+    vertical-align: middle;
+}
+
+.auth-wrap .auth-wrap__input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.auth-wrap .auth-wrap__input input {
+    font-family: 'CustomFont', sans-serif;
+    width: 80%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 100%);
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    color: #fff;
+    padding: 5px;
+    line-height: 20px;
+}
+
+.auth-wrap__input input::placeholder {
+    color: #fff;
+}
+
+.auth-wrap label > i {
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    font-size: 20px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.auth-wrap .auth-wrap__remember-forgot {
+    display: flex;
+    justify-content: center;
+    column-gap: 12px;
+    font-size: .8rem;
+    margin: 0 70px;
+    line-height: 20px;
+}
+
+.auth-wrap__forgot,
+.auth-wrap__sign-link {
+    color: #fff;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.auth-wrap__forgot:hover,
+.auth-wrap__sign-link:hover {
+    text-decoration: underline;
+}
+
+.auth-wrap__submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 15px 0;
+    line-height: 20px;
+}
+
+.auth-wrap__btn {
+    font-family: 'CustomFont', sans-serif;
+    width: 25%;
+    font-size: 1rem;
+    font-weight: 500;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.auth-wrap__btn:hover {
+    transform: translateY(2px);
+}
+
+.auth-wrap__submit--text {
+    display: inline-block;
+    margin: 5px auto;
+}
+
+.auth-wrap__no-account {
+    font-size: .8rem;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.reg-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.reg-wrap__box {
+    background: rgba(255, 255, 255, 0.1);
+    width: 600px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    padding: 20px;
+}
+
+.reg-wrap .reg-wrap__heading {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 25px;
+    line-height: 50px;
+}
+
+.reg-wrap__heading img {
+    height: 35px;
+    width: 35px;
+    vertical-align: middle;
+}
+
+.reg-wrap .reg-wrap__input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.reg-wrap input {
+    font-family: 'CustomFont', sans-serif;
+    width: 80%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 100%);
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    color: #fff;
+    padding: 5px;
+    line-height: 20px;
+}
+
+.reg-wrap__input input::placeholder {
+    color: #fff;
+}
+
+.reg-wrap__input label > i {
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    font-size: 20px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.reg-wrap .reg-wrap__submit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 15px 0;
+    line-height: 20px;
+}
+
+.reg-wrap .reg-wrap__btn {
+    font-family: 'CustomFont', sans-serif;
+    width: 160px;
+    height: 34px;
+    font-size: 1rem;
+    font-weight: 500;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.reg-wrap .reg-wrap__btn:hover {
+    transform: translateY(2px);
 }

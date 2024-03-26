@@ -6,23 +6,20 @@
     <title>Sign in</title>
     <link rel="stylesheet" href="css/reset.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/authorization.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div class="btn-container">
-        <a class="btn-link" href="index.html">
-            <button class="btn-back" type="button">Back</button>
-        </a>
+    <div class="back">
+        <a class="back__link" href="../index.html">Back</a>
     </div>
-    </div>
-    <div class="wrapper">
-        <div class="auth-wrap">
+    <div class="auth-wrap">
+        <div class="auth-wrap__box">
             <form method="POST" action="https://fom.in.ua/echo">
-                <h2 class="auth-heading">
-                    <img src="images/logo.png" alt="logo">
+                <h2 class="auth-wrap__heading">
+                    <img src="../images/logo.png" alt="logo">
                     Sign in
                 </h2>
-                <div class="auth-input">
+                <div class="auth-wrap__input">
                     <label>
                         <i class='bx bx-envelope'></i>
                         <input
@@ -34,7 +31,7 @@
                     </label>
                 </div>
 
-                <div class="auth-input">
+                <div class="auth-wrap__input">
                     <label>
                         <i class='bx bx-lock-alt' ></i>
                         <input
@@ -45,25 +42,25 @@
                     </label>
                 </div>
 
-                <div class="remember-forgot">
+                <div class="auth-wrap__remember-forgot">
                     <label>
                         <input
                             type="checkbox"
                             name="Remember_me">
                             Remember me
                     </label>
-                    <a class="forgot" href="mailto:zaitm99@gmail.com?subject=Forgot%20my%20password">Forgot password?</a>
+                    <a class="auth-wrap__forgot" href="mailto:zaitm99@gmail.com?subject=Forgot%20my%20password">Forgot password?</a>
                 </div>
 
-                <div class="btn-box">
-                    <button class="auth-btn" type="submit">Sign in</button>
+                <div class="auth-wrap__submit">
+                    <button class="auth-wrap__btn" type="submit"><span class="auth-wrap__submit--text">Sign in</span></button>
                 </div>
 
-                <div class="no-account">
+                <div class="auth-wrap__no-account">
                     <p>
                         Don't have an account yet?
                         <a
-                            class="no-account__sign-up"
+                            class="auth-wrap__sign-link"
                             href="registration.html">
                             Sign up
                         </a>

@@ -6,22 +6,20 @@
     <title>Sign up</title>
     <link rel="stylesheet" href="css/reset.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/registration.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div class="btn-container">
-        <a class="btn-link" href="index.html">
-            <button class="btn-back" type="button">Back</button>
-        </a>
+    <div class="back">
+        <a class="back__link" href="../index.html">Back</a>
     </div>
-    <div class="wrapper">
-        <div class="reg-wrap">
+    <div class="reg-wrap">
+        <div class="reg-wrap__box">
             <form method="POST" action="https://fom.in.ua/echo">
-                <h2 class="reg-heading">
-                    <img src="images/logo.png" alt="logo">
+                <h2 class="reg-wrap__heading">
+                    <img src="../images/logo.png" alt="logo">
                     Sign up
                 </h2>
-                <div class="reg-input">
+                <div class="reg-wrap__input">
                     <label>
                         <i class='bx bx-envelope'></i>
                         <input
@@ -33,7 +31,7 @@
                     </label>
                 </div>
         
-                <div class="reg-input">
+                <div class="reg-wrap__input">
                     <label>
                         <i class='bx bx-user-pin'></i>
                         <input
@@ -44,7 +42,7 @@
                     </label>
                 </div>
     
-                <div class="reg-input">
+                <div class="reg-wrap__input">
                     <label>
                         <i class='bx bx-phone' ></i>
                         <input
@@ -56,7 +54,7 @@
                     </label>
                 </div>
     
-                <div class="reg-input">
+                <div class="reg-wrap__input">
                     <label>
                         <i class='bx bx-lock-alt' ></i>
                         <input
@@ -68,8 +66,8 @@
                     </label>
                 </div>
     
-                <div class="btn-box">
-                    <button class="reg-btn" type="submit">Create account</button>
+                <div class="reg-wrap__submit">
+                    <button class="reg-wrap__btn" type="submit">Create account</button>
                 </div>
             </form>
         </div>
